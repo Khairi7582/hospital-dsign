@@ -3,8 +3,8 @@
      --blue:blue;
      --dblue:darkblue;
      --dgray:darkgray;
-     --box-shadow: .5rem .5rem .5rem var(--blue);
-     --text-shadow: .5rem .5rem .5rem --dgray;
+     --box-shadow: .5rem .5rem 0rem var(--blue);
+     --text-shadow: .3rem .3rem 0rem #777;
      --border:.5rem sloid var(--blue) ;
 }
 *{
@@ -26,4 +26,67 @@ html{
 }
 section{
      padding: 3rem 5%;
+}
+.heading{
+     color: var(--blue);
+     font-size: 4rem;
+     text-align: center;
+     text-shadow: var(--text-shadow);
+     text-transform: uppercase;
+     letter-spacing: .5rem;
+     margin-top: 3rem;
+     
+}
+.heading span{
+     color: var(--dblue);
+     text-transform: uppercase;
+}
+.btn
+{
+     display: inline-block;
+     border: var(--border);
+     color: var(--dblue);
+     background: var(--blue);
+     padding: 1.5rem;
+     font-size: 3rem;
+     margin: 7rem;
+     border-radius: 2rem;
+     cursor: pointer;
+     box-shadow: var(--box-shadow);
+     padding-left: 1rem;
+}
+.btn span{
+     color:black;
+     background-color: aliceblue;
+     padding: .5rem  1.5rem;
+     font-size: 2rem;
+     border-radius: 2rem;
+
+}
+.header{
+     display: flex;
+     position: fixed;
+     top: 0;right: 0;left: 0;
+     z-index: 1000;
+     align-items: center;
+     justify-content: space-between;
+     padding: 2rem;
+     background: var(--dblue);
+}
+.header .logo{
+     font-size: 3rem;
+     color:white;
+}
+.header .logo i{
+     color: aliceblue;
+     font-size: 4rem;
+}
+.header .navbar a{
+     color: aliceblue;
+     font-size: 2rem;
+     padding-left: 1rem;
+
+}
+.header .navbar a:hover{
+     color: orangered;
 }
