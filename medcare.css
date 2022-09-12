@@ -8,14 +8,22 @@
      --border:.5rem sloid var(--blue) ;
 }
 *{
+     font-family: Georgia, 'Times New Roman', Times, serif;
      outline: none;
      margin: 0%;
      padding: 0%;
      text-decoration: none;
      box-sizing: border-box;
+     text-transform:capitalize;
+     transition: all 0.2 ease-out;
 
 }
 html{
      font-size: 70%;
-     border: var(--border);
+     overflow: none;
+     scroll-behavior: inherit;
+     scroll-padding-top:7rem ;
+}
+section{
+     padding: 3rem 5%;
 }
